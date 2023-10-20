@@ -1,34 +1,34 @@
-console.log (computerChoice);
 
-var rPS = ["r","p","s"];
+
+var rPS = ["R","P","S"];
 var playerWins = 0;
 var computerWins = 0;
 var tie = 0;
 
 function rockPaperScissors(){
 for (var i = 0; i < 10; i++) {
-        var choice = prompt("Enter r, p or s");
-        choice = choice.toLowerCase()
+        var choice = prompt("Enter R, P or S");
+        choice = choice.toUpperCase()
         var computerChoice = rPS [Math.floor(Math.random()*rPS.length)];
     if (choice == computerChoice) {
         tie++;
         alert("Draw - " + "Computer also chose " + computerChoice)
-    } else if (choice == "r" && computerChoice == "p") {
+    } else if (choice == "R" && computerChoice == "P") {
         computerWins++;
         alert("Computer wins - " + "Computer chose " + computerChoice)
-    } else if (choice == "r" && computerChoice == "s") {
+    } else if (choice == "R" && computerChoice == "S") {
         playerWins++;
         alert("You win - " + "Computer chose " + computerChoice)
-    } else if (choice == "s" && computerChoice == "p") {
+    } else if (choice == "S" && computerChoice == "P") {
         playerWins++;
         alert("You win - " + "Computer chose " + computerChoice)
-    } else if (choice == "s" && computerChoice == "r") {
+    } else if (choice == "S" && computerChoice == "R") {
         computerWins++;
         alert("Computer wins - " + "Computer chose " + computerChoice)
-    } else if (choice == "p" && computerChoice == "r") {
+    } else if (choice == "P" && computerChoice == "R") {
         playerWins++;
         alert("You win - " + "Computer chose " + computerChoice)
-    } else if (choice == "p" && computerChoice == "s") {
+    } else if (choice == "P" && computerChoice == "S") {
         computerWins++;
         alert("Computer wins - " + "Computer chose " + computerChoice) 
     } else {
