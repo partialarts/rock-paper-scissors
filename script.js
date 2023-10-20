@@ -6,7 +6,7 @@ var computerWins = 0;
 var tie = 0;
 
 function rockPaperScissors(){
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 5; i++) {
         var choice = prompt("Enter R, P or S");
         choice = choice.toUpperCase()
         var computerChoice = rPS [Math.floor(Math.random()*rPS.length)];
